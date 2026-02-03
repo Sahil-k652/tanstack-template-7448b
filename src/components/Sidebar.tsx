@@ -13,23 +13,23 @@ interface SidebarProps {
   handleUpdateChatTitle: (id: string, title: string) => void;
 }
 
-export const Sidebar = ({ 
-  conversations, 
-  currentConversationId, 
-  handleNewChat, 
-  setCurrentConversationId, 
-  handleDeleteChat, 
-  editingChatId, 
-  setEditingChatId, 
-  editingTitle, 
-  setEditingTitle, 
-  handleUpdateChatTitle 
+export const Sidebar = ({
+  conversations,
+  currentConversationId,
+  handleNewChat,
+  setCurrentConversationId,
+  handleDeleteChat,
+  editingChatId,
+  setEditingChatId,
+  editingTitle,
+  setEditingTitle,
+  handleUpdateChatTitle
 }: SidebarProps) => (
-  <div className="flex flex-col w-64 bg-gray-800 border-r border-gray-700">
+  <div className="hidden sm:flex flex-col w-64 bg-gray-800 border-r border-gray-700">
     <div className="p-4 border-b border-gray-700">
       <button
         onClick={handleNewChat}
-        className="flex items-center justify-center w-full gap-2 px-3 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-orange-500 to-red-600 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-orange-500"
+        className="flex items-center justify-center w-full gap-2 px-3 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <PlusCircle className="w-4 h-4" />
         New Chat

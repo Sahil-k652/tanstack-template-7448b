@@ -101,27 +101,27 @@ html {
 }
 
 .prose blockquote {
-  border-left-color: #f97316; /* orange-500 */
-  background-color: rgba(249, 115, 22, 0.1);
+  border-left-color: #3b82f6; /* blue-500 */
+  background-color: rgba(59, 130, 246, 0.1);
   padding: 1em;
   margin: 1.25em 0;
   border-radius: 0.5rem;
 }
 
 .prose hr {
-  border-color: rgba(249, 115, 22, 0.2);
+  border-color: rgba(59, 130, 246, 0.2);
   margin: 2em 0;
 }
 
 .prose a {
-  color: #f97316; /* orange-500 */
+  color: #3b82f6; /* blue-500 */
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.2em;
 }
 
 .prose a:hover {
-  color: #fb923c; /* orange-400 */
+  color: #60a5fa; /* blue-400 */
 }
 
 .prose table {
@@ -132,11 +132,11 @@ html {
 
 .prose th, .prose td {
   padding: 0.75em;
-  border: 1px solid rgba(249, 115, 22, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .prose th {
-  background-color: rgba(249, 115, 22, 0.1);
+  background-color: rgba(59, 130, 246, 0.1);
   font-weight: 600;
 }
 
@@ -191,7 +191,7 @@ html {
   content: '▋';
   animation: pulse 1.5s ease-in-out infinite;
   margin-left: 2px;
-  color: #f97316;
+  color: #3b82f6;
   display: inline-block;
   transform-origin: center;
 }
@@ -233,12 +233,12 @@ html {
 
 .prose th,
 .prose td {
-  border: 1px solid rgba(249, 115, 22, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   padding: 0.5em;
 }
 
 .prose th {
-  background-color: rgba(249, 115, 22, 0.1);
+  background-color: rgba(59, 130, 246, 0.1);
 }
 
 .prose strong {
@@ -251,7 +251,7 @@ html {
 }
 
 .prose blockquote {
-  border-left: 4px solid #f97316; /* orange-500 */
+  border-left: 4px solid #3b82f6; /* blue-500 */
   padding-left: 1em;
   margin: 1em 0;
   color: #d1d5db; /* text-gray-300 */
@@ -277,4 +277,46 @@ html {
   background-color: transparent;
   padding: 0;
   border-radius: 0;
+}
+
+/* Mobile-friendly styles for Android compatibility */
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .prose h1 {
+    font-size: 1.5em;
+  }
+
+  .prose h2 {
+    font-size: 1.25em;
+  }
+
+  .prose h3 {
+    font-size: 1.125em;
+  }
+
+  .prose pre {
+    padding: 0.75rem;
+    font-size: 0.8em;
+  }
+
+  .prose table {
+    font-size: 0.875em;
+  }
+}
+
+/* Touch-friendly tap targets for mobile */
+@media (pointer: coarse) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent zoom on input focus for iOS/Android */
+input, textarea, select {
+  font-size: 16px;
 }

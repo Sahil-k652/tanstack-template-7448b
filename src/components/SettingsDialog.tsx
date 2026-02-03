@@ -54,7 +54,7 @@ export function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
                 </label>
                 <button
                   onClick={() => setIsAddingPrompt(true)}
-                  className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-red-600 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                   <PlusCircle className="w-4 h-4" />
                   Add Prompt
@@ -68,7 +68,7 @@ export function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
                     value={promptForm.name}
                     onChange={(e) => setPromptForm(prev => ({ ...prev, name: e.target.value }))}
                     placeholder="Prompt name..."
-                    className="w-full px-3 py-2 text-sm text-white bg-gray-700 border border-gray-600 rounded-lg focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                    className="w-full px-3 py-2 text-sm text-white bg-gray-700 border border-gray-600 rounded-lg focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                   />
                   <textarea
                     value={promptForm.content}
@@ -85,7 +85,7 @@ export function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
                     </button>
                     <button
                       onClick={handleAddPrompt}
-                      className="px-3 py-1.5 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-red-600 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                      className="px-3 py-1.5 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       Save Prompt
                     </button>
@@ -108,7 +108,7 @@ export function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
                           checked={prompt.is_active}
                           onChange={() => setPromptActive(prompt.id, !prompt.is_active)}
                         />
-                        <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-orange-500"></div>
+                        <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500"></div>
                       </label>
                       <button
                         onClick={() => deletePrompt(prompt.id)}
@@ -136,7 +136,7 @@ export function SettingsDialog({ isOpen, onClose }: SettingsDialogProps) {
             </button>
             <button
               onClick={handleClose}
-              className="px-4 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-orange-500 to-red-600 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="px-4 py-2 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               Close
             </button>
