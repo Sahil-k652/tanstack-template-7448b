@@ -17,10 +17,18 @@ export const Route = createRootRoute({
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
+        content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover',
       },
       {
-        title: 'TanStack Chat Starter',
+        name: 'theme-color',
+        content: '#000000',
+      },
+      {
+        name: 'mobile-web-app-capable',
+        content: 'yes',
+      },
+      {
+        title: 'Chat Bot AI',
       },
     ],
     links: [

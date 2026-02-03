@@ -295,19 +295,19 @@ function Home() {
   }, [updateConversationTitle]);
 
   return (
-    <div className="relative flex h-screen bg-gray-900">
+    <div className="relative flex h-screen bg-black">
       {/* Settings Button */}
       <div className="absolute z-50 top-5 right-5">
         <button
           onClick={() => setIsSettingsOpen(true)}
-          className="flex items-center justify-center w-10 h-10 text-white transition-opacity rounded-full bg-gradient-to-r from-orange-500 to-red-600 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="flex items-center justify-center w-10 h-10 text-white transition-opacity rounded-full bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <Settings className="w-5 h-5" />
         </button>
       </div>
 
       {/* Sidebar */}
-      <Sidebar 
+      <Sidebar
         conversations={conversations}
         currentConversationId={currentConversationId}
         handleNewChat={handleNewChat}
@@ -324,7 +324,7 @@ function Home() {
       <div className="flex flex-col flex-1">
         <TopBanner />
         {error && (
-          <p className="w-full max-w-3xl p-4 mx-auto font-bold text-orange-500">{error}</p>
+          <p className="w-full max-w-3xl p-4 mx-auto font-bold text-blue-500">{error}</p>
         )}
         {currentConversationId ? (
           <>
